@@ -1,24 +1,18 @@
 # README
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+Mock up
 
-Things you may want to cover:
+![alt text][index]
+[index]: /Index_page.png "Index page"
 
-* Ruby version
+![alt text][my_profile]
+[my_profile]: /Mockup_mi_profile.png "Profile Page"
 
-* System dependencies
+![alt text][new_post]
+[new_post]: /New_post_page.png "New Post Page"
 
-* Configuration
+![alt text][show]
+[show]: /Show_page.png "Show page"
 
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+To get the proyect running you need to clone the repo,
+create and migrate the db, run bundle install and then rails s and you are ready to look at it at localhost:3000
