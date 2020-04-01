@@ -1,6 +1,4 @@
-# README
-
-Mock up
+## Mock up
 
 ![alt text][index]
 
@@ -18,7 +16,6 @@ Mock up
 
 [show]: /Show_page.png "Show page"
 
-## To get the proyect running you need to:
-clone the repo, create and migrate the db, run bundle install and then rails s and you are ready to look at it at localhost:3000
+## To get the proyect running you need to clone the repo, create and migrate the db, run bundle install and then rails s and you are ready to look at it at localhost:3000
 
 This proyect is based on CrashLearner course

@@ -1,0 +1,10 @@
+<% @posts.each do |post| %>
+  <div class="post_wrapper">
+    <h2 class="title"><%= post.title %></h2>
+    <p class="date"><%= time_ago_in_words(post.created_at)%> ago</p>
+    <p><%= truncate(post.body, length:50)%></p>
+  </div>
+<% end %>  
+
+<%= link_to 'Create a Post', new_post_path %>
+
