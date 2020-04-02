@@ -1,6 +1,14 @@
 <div id="main_content">
   <div id="header">
-    <p>Post Feed</p>
+    <% if current_page?(root_path) %>
+      <p>Post Feed</p>
+    <% elsif current_page?(about_path) %>
+      <p>My Site</p>
+    <% else %>    
+      <p><%= link_to 'Back to Post Feed', root_path %></p>
+    <% end %>
+    
+    
     <div class="buttons">
       <button class="button"><%= link_to 'New Post', new_post_path %></button>
       <button class="button">Log Out</button>
