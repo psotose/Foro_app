@@ -10,6 +10,7 @@
  * files in this directory. Styles in this file should be added after the last require_* statement.
  * It is generally better to create a new file per style scope.
  *
+ *= require simple_discussion
  *= require_tree .
  *= require_self
  */
@@ -99,7 +100,7 @@ a {
 }
 
 #main_content {
-	margin-left: 200px;
+	margin-left: 220px;
 	#header {
 		padding: 1.2em 3.5em;
 		border-bottom: 1px solid #b8e2fe;
@@ -262,4 +263,14 @@ a {
 			color: #33acb7;
 		}
 	}
+}
+.col-md-12{
+	padding-left: 50px;
+}
+.simple_discussion {
+	padding-left: 50px;
+	padding-bottom: 50px;
+}
+.forum_thread_forum_posts_attributes_0_body{
+	display: inherit;
 }
