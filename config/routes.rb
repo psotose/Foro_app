@@ -5,6 +5,6 @@ Rails.application.routes.draw do
     resources :comments
   end
   get '/about', to: 'pages#about'
-
+  mount SimpleDiscussion::Engine => "/forum"
   root 'posts#index'
 end
