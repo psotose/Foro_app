@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2020_04_06_010310) do
+ActiveRecord::Schema.define(version: 2020_04_03_135204) do
 
   create_table "comments", force: :cascade do |t|
     t.string "name"
@@ -19,43 +19,6 @@ ActiveRecord::Schema.define(version: 2020_04_06_010310) do
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
     t.index ["post_id"], name: "index_comments_on_post_id"
-  end
-
-  create_table "forum_categories", force: :cascade do |t|
-    t.string "name", null: false
-    t.string "slug", null: false
-    t.string "color", default: "000000"
-    t.datetime "created_at"
-    t.datetime "updated_at"
-  end
-
-  create_table "forum_posts", force: :cascade do |t|
-    t.integer "forum_thread_id"
-    t.integer "user_id"
-    t.text "body"
-    t.boolean "solved", default: false
-    t.datetime "created_at"
-    t.datetime "updated_at"
-  end
-
-  create_table "forum_subscriptions", force: :cascade do |t|
-    t.integer "forum_thread_id"
-    t.integer "user_id"
-    t.string "subscription_type"
-    t.datetime "created_at"
-    t.datetime "updated_at"
-  end
-
-  create_table "forum_threads", force: :cascade do |t|
-    t.integer "forum_category_id"
-    t.integer "user_id"
-    t.string "title", null: false
-    t.string "slug", null: false
-    t.integer "forum_posts_count", default: 0
-    t.boolean "pinned", default: false
-    t.boolean "solved", default: false
-    t.datetime "created_at"
-    t.datetime "updated_at"
   end
 
   create_table "posts", force: :cascade do |t|

@@ -10,7 +10,11 @@
     <%= f.text_field :body %>
   </p>
   <br>
-  <p>
-    <%= f.submit %>
-  </p>
+  <% if user_signed_in? %>
+    <p>
+      <%= f.submit %>
+    </p>
+  <% else %>  
+    <button class="button"><p class="sign_in"><%= link_to 'User Login', new_user_session_path %></p></button>
+  <% end %>
 <% end %>
